@@ -99,6 +99,12 @@ bindkey -M viins '^f' history-incremental-search-forward
 bindkey -M vicmd '/' history-incremental-search-backward
 bindkey -M vicmd '?' history-incremental-search-forward
 
-alias ls="ls --color=auto"
+
+# Nice alias for ls
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+	alias ls="ls --color=auto"
+elif [[ "$OSTYPE" == "freebsd"* ]]; then
+	alias ls="ls -G"
+fi
 
 source /opt/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
