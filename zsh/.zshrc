@@ -6,7 +6,7 @@ prompt adam1
 
 setopt histignorealldups sharehistory
 
-# Use emacs keybindings even if our EDITOR is set to vi
+# Use vi keybindings 
 bindkey -v
 
 # Extra binds for more vim like behaviour
