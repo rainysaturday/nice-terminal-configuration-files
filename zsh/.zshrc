@@ -99,5 +99,6 @@ bindkey -M viins '^f' history-incremental-search-forward
 bindkey -M vicmd '/' history-incremental-search-backward
 bindkey -M vicmd '?' history-incremental-search-forward
 
+alias ls="ls --color=auto"
 
 source /opt/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
